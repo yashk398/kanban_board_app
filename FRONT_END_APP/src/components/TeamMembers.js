@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ReactToExcel from 'react-html-table-to-excel';
 
 const axios = require('axios').default;
 
@@ -36,7 +36,7 @@ class TeamMembers extends React.Component {
 
           </div>
           <div className='col-md-8'>
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped table-to-xls" id="table-to-xls">
               <thead>
                 <tr >
                   <td><h3>Name</h3></td>
@@ -62,6 +62,7 @@ class TeamMembers extends React.Component {
 
 
             </table>
+            <ReactToExcel className="btn-primary btn" table="table-to-xls" filename="teammembers" sheet="sheet 1" buttonText="Download Team Members XLS"/>
           </div>
           <div className='col-md-2'>
 
