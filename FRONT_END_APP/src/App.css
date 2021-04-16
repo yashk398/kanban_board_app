@@ -103,7 +103,7 @@
 }
 
 .team-member-dash{
-  margin-top: 25em !important;
+  margin-top: 50em !important;
   display: flex;
   align-items: flex-start;
   justify-content: start;
@@ -130,7 +130,7 @@
   }
 
   .team-member-dash{
-    margin-top: 70em !important;
+    margin-top: 100em !important;
   }
 }
 
